@@ -22,13 +22,12 @@ type Props = {
 
 const Column = (props: Props) => {
   const [input, setInput] = React.useState("");
+
   return (
     <div className="Column w-full">
       <h1
-        style={{ backgroundColor: props.column.backgroundColor }}
-        className={`${props.column.backgroundColor} text-lg font-extrabold text-center text-white font-mono rounded-t-xl py-2`}
+        className={`text-lg font-extrabold text-center text-white font-mono rounded-t-xl py-2 ${props.column.backgroundColor}`}
       >
-        {/* 如何通过`${}`设置className? */}
         {props.column.title}
       </h1>
       <div className="w-full bg-slate-100 h-96 py-1">
