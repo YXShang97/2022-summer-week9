@@ -6,7 +6,7 @@ import Column from "./components/Column";
 const initialState = [
   {
     title: "Todo",
-    backgroundColor: "blue",
+    backgroundColor: "bg-blue-500",
     todos: [
       { text: "hello", editable: false, editInput: "" },
       { text: "foo", editable: false, editInput: "" },
@@ -14,7 +14,7 @@ const initialState = [
   },
   {
     title: "In Progress",
-    backgroundColor: "red",
+    backgroundColor: "bg-red-500",
     todos: [
       { text: "hello", editable: false, editInput: "" },
       { text: "foo", editable: false, editInput: "" },
@@ -22,7 +22,7 @@ const initialState = [
   },
   {
     title: "Code Review",
-    backgroundColor: "green",
+    backgroundColor: "bg-green-500",
     todos: [
       { text: "hello", editable: false, editInput: "" },
       { text: "foo", editable: false, editInput: "" },
@@ -30,7 +30,7 @@ const initialState = [
   },
   {
     title: "Done",
-    backgroundColor: "purple",
+    backgroundColor: "bg-purple-500",
     todos: [
       { text: "hello", editable: false, editInput: "" },
       { text: "foo", editable: false, editInput: "" },
@@ -112,7 +112,7 @@ function App() {
   };
 
   return (
-    <div className="App grid grid-cols-4 gap-12 max-w-4xl mx-auto">
+    <div className="App grid grid-cols-4 gap-x-4 max-w-5xl mx-auto py-12">
       {data.map((column, colIndex) => (
         <Column
           key={colIndex}
